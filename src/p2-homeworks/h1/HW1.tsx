@@ -1,11 +1,12 @@
 import React from 'react'
 import AlternativeMessage from "./AlternativeMessage";
-import Message from "./Message";
+import {Message} from "./Message";
+import avatar from "./assets/images/avatar.png";
 
 const messageData = {
-    avatar: 'https://sun9-74.userapi.com/Ph-WiuOtF985il9AvN9JqiCWedmHtSGSSTXrSA/ltEB2Z2-YO4.jpg',
+    avatar: avatar,
     name: 'Some Name',
-    message: 'some text',
+    message: 'some text some text some text some text some text some text some text some text ',
     time: '22:00',
 }
 

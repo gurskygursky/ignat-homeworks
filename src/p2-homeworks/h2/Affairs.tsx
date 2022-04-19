@@ -3,9 +3,9 @@ import Affair from './Affair'
 import {AffairType, FilterType} from './HW2'
 
 type AffairsPropsType = { // need to fix any
-    data: AffairType[],
-    setFilter: (priority: FilterType) => void,
-    deleteAffairCallback: (_id: number) => void,
+    data: AffairType[]
+    setFilter: (filter: FilterType) => void
+    deleteAffairCallback: (_id: number) => void
 }
 
 function Affairs(props: AffairsPropsType) {
@@ -24,7 +24,9 @@ function Affairs(props: AffairsPropsType) {
 
     return (
         <div>
+
             {mappedAffairs}
+
             <button onClick={setAll}>All</button>
             <button onClick={setHigh}>High</button>
             <button onClick={setMiddle}>Middle</button>

@@ -1,25 +1,47 @@
 .superInput {
-    margin: 10px;
-    background-color: #003300;
-    color: #99ff99;
-}
 
-.input:focus {
-    outline: none;
-    border: #99ff99 solid 2px;
 }
 
 .errorInput {
-    margin: 10px;
-
-    border: 3px solid #dd3355;
-    background: #003300;
-    color: #99ff99;
-
+    border: 3px solid lime;
+    background: red;
 }
 
 .error {
-    color: red;
-    height: 21px;
-    margin-left: 10px;
+    color: crimson;
+}
+
+
+
+
+.inputContainer{
+    position:relative;
+    margin-bottom:25px;
+}
+.inputContainer label{
+    position:absolute;
+    top:0;
+    left:0;
+    font-size:16px;
+    color: #ffffff;
+    transition: all 0.5s ease-in-out;
+}
+.inputContainer input{
+    border:0;
+    border-bottom:1px solid #555;
+    background:transparent;
+    width:100%;
+    padding:8px 0 5px 0;
+    font-size:16px;
+    color:#fff;
+}
+.inputContainer input:focus{
+    border:none;
+    outline:none;
+    border-bottom:1px solid #e74c3c;
+}
+.inputContainer input:focus ~ label,
+.inputContainer input:valid ~ label{
+    top:-12px;
+    font-size:12px;
 }

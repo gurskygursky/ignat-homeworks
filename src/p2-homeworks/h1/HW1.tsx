@@ -1,7 +1,7 @@
 import React from 'react'
 import AlternativeMessage from "./AlternativeMessage";
 import {Message} from "./Message";
-import avatar from "./assets/images/avatar.png";
+import avatar from "../assets/images/avatar.png";
 
 const messageData = {
     avatar: avatar,

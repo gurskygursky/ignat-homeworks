@@ -15,7 +15,7 @@ const Greeting: React.FC<GreetingPropsType> = (
     {name, setNameCallback, addUser, error, totalUsers, onClickEnter} // деструктуризация пропсов
 ) => {
     const inputClass = error ? s.error : '' // need to fix with (?:)
-
+    const textError = error ? s.textError : ''
     return (
         <div>
             <input value={name}
@@ -23,7 +23,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                    className={inputClass}
                    onKeyPress={onClickEnter}
             />
-            <span>{error}</span>
+            <div className={textError}>{error}</div>
             <button onClick={addUser}>add</button>
             <span>{totalUsers}</span>
         </div>

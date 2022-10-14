@@ -1,9 +1,12 @@
 .App {
     --header_height: 60px;
+    background-image: url(src/s2-homeworks/hw01/background_image.jpg);
+    min-height: 100vh;
+    min-width: 100vh ;
+    background-size: cover;
 }
 
 .hw {
-
 }
 
 .hwTitle {

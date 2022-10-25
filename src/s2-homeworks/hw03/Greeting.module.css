@@ -5,6 +5,7 @@
 }
 
 .error {
+    color: crimson;
 }
 
 .input {
@@ -14,6 +15,9 @@
 }
 
 .errorInput {
+    border-style: solid ;
+    border-width: medium;
+    border-color: crimson;
 }
 
 .button {

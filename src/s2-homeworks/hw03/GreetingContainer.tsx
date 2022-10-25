@@ -7,7 +7,7 @@ type GreetingContainerPropsType = {
     addUserCallback: (name: string) => void; // need to fix any
 }
 
-export const pureAddUser = (name: string, setError: (error: string) => void, setName: (name: string) => void, addUserCallback: (name: string) => void) => {
+export const pureAddUser = (name: string, setError: (error: string | null) => void, setName: (name: string) => void, addUserCallback: (name: string) => void) => {
     if (name === '') {
         setError('Incorrect value');
     }
@@ -15,6 +15,7 @@ export const pureAddUser = (name: string, setError: (error: string) => void, set
     if (name !== '') {
         addUserCallback(name);
         setName('');
+        setError(null);
     }
     // если имя пустое - показать ошибку, иначе - добавить юзера и очистить инпут
 }
@@ -43,7 +44,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
 }) => {
     // деструктуризация пропсов
     const [name, setName] = useState<string>('') // need to fix any
-    const [error, setError] = useState<string>('') // need to fix any
+    const [error, setError] = useState<string | null>('') // need to fix any
 
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
         setName(e.currentTarget.value) // need to fix

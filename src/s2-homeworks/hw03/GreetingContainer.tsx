@@ -13,7 +13,7 @@ export const pureAddUser = (name: string, setError: (error: string | null) => vo
     }
 
     if (name.trim() !== '') {
-        addUserCallback(name);
+        addUserCallback(name.trim());
         setName('');
         setError(null);
     }
@@ -32,6 +32,7 @@ export const pureOnEnter = (e: KeyboardEvent<HTMLInputElement>, addUser: () => v
         addUser();
         // do something
     }
+
 }
 
 // более простой и понятный для новичков
@@ -64,7 +65,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     }
 
     const totalUsers = users.length // need to fix
-    const lastUserName = name.trim() // need to fix
+    const lastUserName = users.map((user: UserType) => user.name); // need to fix
 
     return (
         <Greeting

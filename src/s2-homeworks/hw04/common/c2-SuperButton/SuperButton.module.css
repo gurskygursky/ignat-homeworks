@@ -1,5 +1,8 @@
 .button {
+    background-color: #DDEEFF;
+
 }
+
 
 .disabled {
 }
@@ -8,9 +11,11 @@
 }
 
 .default {
+    background-color: mediumaquamarine;
 }
 
 .red {
+    background-color: #cc0000;
 }
 
 .default:hover {

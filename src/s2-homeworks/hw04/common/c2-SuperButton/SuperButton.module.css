@@ -5,17 +5,19 @@
 
 
 .disabled {
+    background-color: #ddeeff;
 }
 
 .secondary {
+    background-color: deeppink;
 }
 
 .default {
-    background-color: mediumaquamarine;
+    background-color: burlywood;
 }
 
 .red {
-    background-color: #cc0000;
+    background-color: crimson;
 }
 
 .default:hover {

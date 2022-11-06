@@ -1,5 +1,4 @@
 .input:focus {
-    outline: none;
 }
 
 .input {
@@ -12,10 +11,12 @@
 }
 
 .errorInput {
+    border-color: crimson;
 }
 
 .errorInput:focus {
 }
 
 .error {
+    color: crimson;
 }
